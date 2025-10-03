@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Study Planner</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>📚 Smart Study Planner</h1>
+        
+        <div class="task-form">
+            <input type="text" id="subject" placeholder="Subject" required>
+            <input type="text" id="topic" placeholder="Topic" required>
+            <input type="number" id="duration" placeholder="Duration (hrs)" min="0.5" step="0.5" required>
+            <button id="addTaskBtn">Add Task</button>
+        </div>
+
+        <h2>Today's Tasks</h2>
+        <ul id="taskList"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+/* Google Font */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background: white;
+    padding: 30px 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-top: 30px;
+    color: #555;
+    text-align: center;
+}
+
+.task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.task-form input {
+    flex: 1;
+    min-width: 120px;
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+}
+
+.task-form input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74,144,226,0.3);
+}
+
+.task-form button {
+    padding: 12px 20px;
+    border: none;
+    background: #4a90e2;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.task-form button:hover {
+    background: #357ABD;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    background: #f0f8ff;
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+li.completed {
+    text-decoration: line-through;
+    background: #d4ffd4;
+    color: #555;
+}
+
+li span {
+    font-weight: 500;
+}
+
+li div button {
+    background: #f44336;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin-left: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+li div button:hover {
+    background: #da190b;
+}
+
+li div button:first-child {
+    background: #4caf50;
+}
+
+li div button:first-child:hover {
+    background: #3e8e41;
+}
+
+/* Responsive */
+@media(max-width: 480px){
+    .task-form {
+        flex-direction: column;
+    }
+
+    .task-form input, .task-form button {
+        width: 100%;
+    }
+}
